@@ -7,9 +7,9 @@ export const CartCard = ({product}) => {
   return (
     <div className="flex flex-wrap justify-between border-b dark:border-slate-700 max-w-4xl m-auto p-2 mb-5 ">
       <div className="flex">
-          <a href="">
+          <Link to={`products/${product.id}`}>
             <img className="w-32 rounded" src={product.poster} alt={product.name} />
-          </a>
+          </Link>
           <div className="">
             <Link to={`products/${product.id}`}>
               <p className="text-lg ml-2 dark:text-slate-200">{product.name}</p>
